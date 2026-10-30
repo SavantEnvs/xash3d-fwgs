@@ -1,0 +1,8 @@
+project: savantenvs/xash3d-fwgs
+target: run-fuzzer-sound-loadmpg
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/run-fuzzer-sound-loadmpg/testsuite
+cmds:
+  - cmd: /mayhem/run-fuzzer-sound-loadmpg
+    libfuzzer: true

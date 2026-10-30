@@ -1,0 +1,8 @@
+project: savantenvs/xash3d-fwgs
+target: run-fuzzer-sound-parseid3tag
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/run-fuzzer-sound-parseid3tag/testsuite
+cmds:
+  - cmd: /mayhem/run-fuzzer-sound-parseid3tag
+    libfuzzer: true
